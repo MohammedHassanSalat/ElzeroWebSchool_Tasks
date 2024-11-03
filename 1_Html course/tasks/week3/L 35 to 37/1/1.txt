@@ -1,0 +1,8 @@
+1. <input type="submit">
+2. <title>
+3. <h2> to <h6>
+4. <p>
+5. <html lang="ar"> arabic for example
+6. 10 - 20 is better
+7. I will use tabindex ex: <div tabindex="0"> for the first div
+8. "Accessible Rich Internet Applications" : group of attributes makes elements more accessible for people with disabilities

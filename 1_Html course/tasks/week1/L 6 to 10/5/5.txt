@@ -1,0 +1,8 @@
+Global Attributes (can be used with all HTML elements):
+
+title: Specifies extra information about an element.
+hidden: Specifies that an element is not yet, or is no longer, relevant.
+class: Specifies one or more classnames for an element.
+id: Specifies a unique id for an element.
+
+the rest are not Global

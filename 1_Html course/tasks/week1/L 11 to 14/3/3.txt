@@ -1,0 +1,11 @@
+<!-- Go To External Link -->
+<a href="https://google.com">Google</a>
+
+<!-- Internal Link --> 
+<a href="#section1">Go to Section 1</a>
+
+<!-- Telephone Link --> 
+<a href="tel:1234567890">Call 123-456-7890</a>
+
+<!-- Download Link --> 
+<a href="/path/to/file.pdf"> download>Download the file</a>
