@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 20px;
+    color: white;
+}
+
+/* .one ,
+.two ,
+.three ,
+.four ,
+.five ,
+.six {
+    background-color: slategray;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} */
+
+.grid div {
+    background-color: slategray;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.one::before {
+    content: "Element 1";
+}
+
+.two::before {
+    content: "Element 2";
+}
+
+.three::before {
+    content: "Element 3";
+}
+
+.four::before {
+    content: "Element 4";
+}
+
+.five::before {
+    content: "Element 5";
+}
+
+.six::before {
+    content: "Element 6";
+}

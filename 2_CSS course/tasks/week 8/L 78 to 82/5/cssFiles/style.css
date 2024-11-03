@@ -1,0 +1,3 @@
+div[title]:nth-last-child(1):not(.no-need div , div .no-need) {
+    color: red;
+}

@@ -1,0 +1,19 @@
+/* bad */
+.USERNAME {
+}
+
+/* bad */
+.UserName {
+}
+
+/* good => best practice */
+.user-name {
+}
+
+/* bad */
+.userName {
+}
+
+/* bad */
+.usernameprofile {
+}

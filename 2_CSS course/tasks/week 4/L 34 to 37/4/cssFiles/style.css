@@ -1,0 +1,21 @@
+p {
+    background-color: #ddd;
+    width: 300px;
+    margin: 30px auto;
+    border-right: 5px solid rgba(255, 51, 0, 0.9);
+    padding: 30px;
+    position: relative;
+    counter-increment: counter-name;
+    font-family: Arial, sans-serif;
+}
+
+p::after {
+    content: counter(counter-name);
+    position: absolute;
+    background-color: rgba(255, 51, 0, 0.9);
+    padding: 30px;
+    font-weight: bold;
+    color: white;
+    top: 0;
+    left: -70px;
+}

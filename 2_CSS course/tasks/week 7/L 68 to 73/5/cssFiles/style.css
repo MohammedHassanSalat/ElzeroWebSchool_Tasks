@@ -1,0 +1,77 @@
+.d1 {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.d1::before {
+    content: "Front";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fa3664;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d1::after {
+    content: "Back";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1692fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.d1:hover {
+    transform: rotateY(-180deg);
+}
+
+
+.d2 {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.d2::before {
+    content: "Front";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fa3664;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d2::after {
+    content: "Back";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1692fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
+.d2:hover {
+    transform: rotateX(-180deg);
+}

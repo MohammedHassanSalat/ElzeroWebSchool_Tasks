@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.p1 {
+    font-family: open-sans ,sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.p2 {
+    font-family: Cairo;
+    font-weight: 700;
+}
+
+.p3 {
+    font-family: Jomhuria ;
+    font-weight: 400;
+}

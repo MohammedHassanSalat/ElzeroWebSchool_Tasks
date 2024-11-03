@@ -1,0 +1,28 @@
+p {
+    background-color: #ddd;
+    width: 400px;
+    margin: 30px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    border-left: 5px solid rgba(255, 0, 115, 0.83);
+    position: relative;
+}
+
+p::before {
+    content: attr(data-person);
+    position: absolute;
+    left: -130px;
+    top: 10px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 25px;
+    border-style: solid;
+    border-width: 15px;
+    border-color:  transparent rgba(255, 0, 115, 0.83) transparent transparent;
+}

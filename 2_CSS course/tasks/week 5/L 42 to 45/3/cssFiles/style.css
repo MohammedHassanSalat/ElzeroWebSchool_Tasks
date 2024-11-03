@@ -1,0 +1,17 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* uncomment and see the change */
+/* 
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}   */
+
+div {
+    color: var(--mainColor , red);
+    border: 3px solid var(--mainColor , black);
+    padding: var(--mainPadding , 10px);
+    margin: 30px;
+}

@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.p1 {
+    font-size: 2.5rem;
+}
+
+.p2 {
+    font-size: 2rem;
+}
+
+.p3 {
+    font-size: 1.5rem;
+}

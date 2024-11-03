@@ -1,0 +1,36 @@
+div {
+    width: 200px;
+    margin: 40px auto;
+    background-color: #ddd;
+    padding: 20px;
+    position: relative;
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    transform: rotate(45deg);
+}
+
+.arrow.top::after {
+    top: -10px;
+    right: 110px;
+}
+
+.arrow.right::after {
+    top: 20px;
+    right: -10px;
+}
+
+.arrow.bottom::after {
+    top: 49px;
+    right: 110px;
+}
+
+.arrow.left::after {
+    top: 20px;
+    right: 230px;
+}

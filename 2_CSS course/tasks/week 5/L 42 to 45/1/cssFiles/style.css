@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.parent {
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: #ddd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.5s ;
+}
+
+
+.sub {
+    width: 300px;
+    margin: 10px auto;
+    background-color: rgba(128, 128, 128, 0.54);
+    padding: 15px;
+    border-radius: 5px;
+    transition: margin-top 1s ;
+    transition-delay: 0.5s;
+}
+
+.parent:hover {
+    margin-top: 80px;
+}
+
+.parent:hover .sub {
+    margin-top: 30px;
+}
+
+
+
+
+

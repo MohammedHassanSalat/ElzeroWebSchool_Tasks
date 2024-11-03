@@ -1,0 +1,33 @@
+.ul-1 {
+    width: 400px;
+    margin: auto;
+}
+
+.HTML,
+.CSS ,
+.JavaScript {
+    background-color: #d8d8d8;
+    margin-top: 30px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.HTML li ,
+.CSS li ,
+.JavaScript li  {
+    background-color: white;
+    padding: 5px;
+    margin: 10px 0 0 -20px;
+}
+
+.CSS li {
+    list-style-type: upper-roman;
+    margin-left: -10px;
+}
+
+.JavaScript li {
+    list-style-position: inside;
+    margin-left: -40px;
+}
+
+

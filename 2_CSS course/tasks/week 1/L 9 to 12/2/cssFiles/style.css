@@ -1,0 +1,21 @@
+.element {
+    background-color: rgba(128, 128, 128, 0.192);
+    color: black;
+    font-size: larger;
+    border-left: red solid 5px;
+    padding: 20px;
+    width: 400px;
+    outline-color: rgba(128, 128, 128, 0.192);
+    outline-width: 15px;
+    outline-style: solid;
+    margin: 50px;
+}
+
+.element-2 {
+    visibility: hidden;
+    border-color: blue;
+}
+
+.element-3 {
+    border-color: green;
+}

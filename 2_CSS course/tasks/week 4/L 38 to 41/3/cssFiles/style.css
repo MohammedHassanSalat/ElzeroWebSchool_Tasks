@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.parent {
+    width: 550px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    margin: 100px auto;
+}
+
+.child {
+    float: left;
+    background-color: #d8d8d8b9;
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+
+
+.button {
+    text-align: center;
+    background-color: rgb(0, 166, 255);
+    width: 130px;
+    margin: 10px auto;
+    padding: 15px 35px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.price {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.216);
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    left: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 35px;
+    line-height: 4;
+}
+
+.c1::before {
+    content: "";
+    width: 2px;
+    height: 300px;
+    left: 275px;
+    background-color: rgb(0, 166, 255);
+    position: absolute;
+}
+
+.c1::after {
+    content: "or";
+    width: 35px;
+    height: 35px;
+    left: 258px;
+    top: 45%;
+    background-color: rgb(0, 166, 255);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.2;
+    color: white;
+    position: absolute;
+}
+
+
+.c2 {
+    margin-left: 50px;
+}

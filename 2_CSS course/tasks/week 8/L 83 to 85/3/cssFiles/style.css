@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    text-transform: capitalize;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-areas: "first first first first"
+                        "second second third third"
+                        "fourth fourth fourth fourth" ;
+    gap: 20px;
+    margin: 15px;
+}
+
+
+.parent div {
+    background-color: #eee;
+    display: grid;
+    justify-content: center;
+    padding: 15px 0;
+    border: 1px solid rgba(0, 0, 0, 0.112);
+}
+
+.parent div h3 {
+    color: #009688;
+}
+
+.parent div p {
+    font-size: 15px;
+    padding-top: 5px;
+    display: grid;
+    justify-content: center;
+}
+
+.parent div:nth-child(1) {
+    grid-area: first;
+}
+
+.parent div:nth-child(2) {
+    grid-area: second;
+}
+
+.parent div:nth-child(3) {
+    grid-area: third;
+}
+
+.parent div:nth-child(4) {
+    grid-area: fourth;
+}
+
+
+@media (max-width : 768px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-areas: "first first first first"
+                        "second second second second"
+                        "third third third third"
+                        "fourth fourth fourth fourth" ;
+    }
+    
+    .parent div h3 {
+        color: black;
+    }
+}
+
+@media (min-width : 769px) and (max-width : 992px) {
+    .parent {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-areas: "first first first"
+                        "second third fourth" ;
+    }
+    
+    .parent div h3 {
+        color: red;
+    }
+}
+

@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.grid {
+    background-color: #ddd;
+    color: black;
+    display: grid;
+    grid-template-areas: "card-1 card-1 card-1 card-1 card-1 card-1 card-2 card-2 card-2 card-3 card-3 card-3"
+                    "card-4 card-4 card-4 card-5 card-5 card-5 card-5 card-5 card-5 card-3 card-3 card-3"
+                    "card-4 card-4 card-4 card-6 card-6 card-6 card-6 card-6 card-6 card-3 card-3 card-3"
+                    "card-7 card-7 card-7 card-8 card-8 card-8 card-9 card-9 card-9 card-10 card-10 card-10";
+    gap: 20px;
+    padding: 30px;
+}
+
+.p1 , 
+.p3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p2 {
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+.p4 {
+    color: rgba(0, 0, 0, 0.848);
+}
+
+.card-1 ,
+.card-2 ,
+.card-3 ,
+.card-4 ,
+.card-5 ,
+.card-6 ,
+.card-7 ,
+.card-8 ,
+.card-9, 
+.card-10 {
+    background-color: white;
+    padding: 20px;
+    border-bottom: 3px solid rgb(255, 42, 0);
+    position: relative;
+}
+
+p {
+    padding-top: 10px;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.card-1 {
+    grid-area: card-1;
+}
+
+.card-2 {
+    grid-area: card-2;
+}
+
+.card-3 {
+    grid-area: card-3;
+}
+
+.card-4 {
+    grid-area: card-4;
+}
+
+.card-5 {
+    grid-area: card-5;
+}
+
+.card-6 {
+    grid-area: card-6;
+}
+
+.card-7 {
+    grid-area: card-7;
+}
+
+.card-8 {
+    grid-area: card-8;
+}
+
+.card-9 {
+    grid-area: card-9;
+}
+
+.card-10 {
+    grid-area: card-10;
+}
+
+.card-3 ,
+.card-5 ,
+.card-8 {
+    background-color: black;
+    color: white;
+}
+
+.card-3 .p4 ,
+.card-5 .p4 ,
+.card-8 .p4 {
+    color: white;
+}
+
+.grid div::after {
+    content: "''";
+    position: absolute;
+    color: #ccc;
+    font-size: 55px;
+    right: 10px;
+    bottom: -15px;
+    transform: rotate(15deg);
+}

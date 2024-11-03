@@ -1,0 +1,16 @@
+div {
+    margin: auto;
+    width: 50%;
+    margin-top: 10%;
+    padding: 20px 0;
+    background-color: #d8d8d8;
+    font-family: Arial, sans-serif;
+}
+
+div::first-letter {
+    float: left;
+    margin: -15px 10px 0 -10px;
+    background-color: red;
+    padding: 15px 7px;
+    color: white;
+}

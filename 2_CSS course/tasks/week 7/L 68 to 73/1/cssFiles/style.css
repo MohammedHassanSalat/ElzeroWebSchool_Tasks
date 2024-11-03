@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: rgb(255, 89, 0);
+    --color: white;
+}
+
+h1 {
+    margin: 100px auto;
+    width: 150px;
+    height: 90px;
+    background-color: var(--background-color);
+    color: var(--color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    transform: skew(-15deg , -10deg);
+    z-index: -1;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    transform: skew(15deg , 10deg);
+    z-index: -1;
+}
