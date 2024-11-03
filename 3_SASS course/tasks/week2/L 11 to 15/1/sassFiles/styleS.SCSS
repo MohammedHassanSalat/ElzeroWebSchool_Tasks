@@ -1,0 +1,32 @@
+@mixin arrow($dim) {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  @if ($dim == "top") {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    border-bottom-color: red;
+  } @else if ($dim == "right") {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+    border-left-color: red;
+  } @else if ($dim == "bottom") {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    border-top-color: red;
+  } @else if ($dim == "left") {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    border-right-color: red;
+  }
+}
+
+.element {
+  &:before {
+    @include arrow("right");
+  }
+}

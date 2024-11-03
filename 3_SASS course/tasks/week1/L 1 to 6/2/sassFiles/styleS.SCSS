@@ -1,0 +1,23 @@
+.child {
+    padding: 10px;
+}
+
+.class > {
+    @extend .child;
+}
+
+.class {
+    > .child {
+        padding: 10px;
+    }
+}
+
+.class > {
+    .child {
+        padding: 10px;
+    }
+}
+
+.class > .child {
+    padding: 10px;
+}

@@ -1,0 +1,21 @@
+// Write Mixin Code Here
+
+@mixin flex-center($wid : ""){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @if $wid == "" {
+        width: 400px;
+    } @else {
+        width: $wid;
+    }
+}
+
+
+// Using
+.box-one {
+    @include flex-center(400px);
+}
+.box-two {
+    @include flex-center;
+}

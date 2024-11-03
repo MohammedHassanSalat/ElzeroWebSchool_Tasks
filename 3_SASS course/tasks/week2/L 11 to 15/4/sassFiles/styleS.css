@@ -1,0 +1,59 @@
+.circle-100 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.circle-200 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.circle-300 {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.circle-400 {
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+}
+
+.circle-500 {
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+}
+
+.circle-600 {
+  width: 600px;
+  height: 600px;
+  border-radius: 300px;
+}
+
+.circle-700 {
+  width: 700px;
+  height: 700px;
+  border-radius: 350px;
+}
+
+.circle-800 {
+  width: 800px;
+  height: 800px;
+  border-radius: 400px;
+}
+
+.circle-900 {
+  width: 900px;
+  height: 900px;
+  border-radius: 450px;
+}
+
+.circle-1000 {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 500px;
+}/*# sourceMappingURL=styleS.css.map */

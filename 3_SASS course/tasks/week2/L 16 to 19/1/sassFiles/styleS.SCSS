@@ -1,0 +1,16 @@
+$num: 2;
+$start: 100;
+
+
+@function double($size) {
+  @return $size * $num;
+}
+
+
+@while $start <= 1600 {
+    .box-#{$start} {
+        width: $start;
+        height: double($start);
+    }
+    $start: double($start); 
+}

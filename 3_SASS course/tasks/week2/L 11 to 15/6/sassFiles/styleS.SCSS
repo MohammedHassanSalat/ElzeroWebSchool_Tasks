@@ -1,0 +1,21 @@
+@mixin placeholder {
+    &.placeholder {
+        color: #777;
+    }
+    &:-moz-placeholder {
+        color: #777;
+    }
+    &::-moz-placeholder {
+        color: #777;
+    }
+    &:-ms-input-placeholder {
+        color: #777;
+    }
+    &::-webkit-input-placeholder {
+        color: #777;
+    }
+}
+
+textarea {
+    @include placeholder;
+}

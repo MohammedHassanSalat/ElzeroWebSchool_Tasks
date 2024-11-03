@@ -1,0 +1,15 @@
+// SASS Code
+
+
+@function get-total($args...){
+    $total: 0;
+    @each $arg in $args {
+        $total: $total + $arg;
+    }
+    @return $total;
+}
+
+.box {
+    top: get-total(100, 50, 20);
+    right: get-total(100, 50);
+}

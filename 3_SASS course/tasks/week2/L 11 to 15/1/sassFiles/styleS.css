@@ -1,0 +1,9 @@
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+  border-left-color: red;
+}/*# sourceMappingURL=styleS.css.map */
