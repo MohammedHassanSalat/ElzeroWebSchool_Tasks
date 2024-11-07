@@ -1,0 +1,32 @@
+let element1 = document.getElementById("elzero");
+let element2 = document.getElementsByClassName("element");
+let element3 = document.getElementsByName("js");
+let element4 = document.getElementsByTagName("div");
+let element5 = document.body.firstChild;
+let element6 = document.querySelector("#elzero");
+let element7 = document.querySelector(".element");
+let element8 = document.querySelector("[name = 'js']");
+let element9 = document.querySelector("div");
+let element10 = document.querySelectorAll("div")[0];
+let element11 = document.querySelectorAll("#elzero")[0];
+let element12 = document.querySelectorAll(".element")[0];
+let element13 = document.querySelectorAll("[name = 'js']")[0];
+let element14 = document.body.firstElementChild;
+let element15 = document.body.children[0];
+
+
+console.log(element1);
+console.log(element2);
+console.log(element3);
+console.log(element4);
+console.log(element5);
+console.log(element6);
+console.log(element7);
+console.log(element8);
+console.log(element9);
+console.log(element10);
+console.log(element11);
+console.log(element12);
+console.log(element13);
+console.log(element14);
+console.log(element15);

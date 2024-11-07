@@ -1,0 +1,28 @@
+form {
+    display: grid;
+    width: 250px;
+    margin: 100px auto;
+}
+
+input , select {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    border: transparent;
+    border-radius: 5px;
+}
+
+input:last-of-type {
+    background-color: rgba(0, 128, 111, 0.916);
+    color: white;
+    font-weight: bold;
+}
+
+.results .box {
+    background-color: red;
+    padding: 5px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    margin: 10px auto;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+        // Code One
+        // this won't work
+        /* 
+        This code won’t work because it’s trying to 
+        access an HTML element before the element has been loaded.
+        The script is in the <head> section and it runs
+        before the HTML body is loaded.
+        Therefore, document.getElementById("el") 
+        returns null and you can’t set a property (style.color) of null.
+        */
+        document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+        // Code Two
+        // this will work
+        /*
+        This code will work because it’s wrapped inside
+        a window.onload function. This function only runs
+        after the entire window (including all of its content)
+        has fully loaded. So at the time this function executes,
+        the element with id “el” is available in the DOM.
+        */
+        window.onload = function () {
+            document.getElementById("el").style.color = "red";
+        };
+    </script>
+</head>
+
+<body>
+    <h1 id="el">Page Title</h1>
+    <script>
+        // Code Three
+        // this will work 
+        /*
+        This code will work because it’s placed at the end of
+        the <body> tag, which means it will only run after all 
+        the HTML elements above it have been loaded. So the 
+        element with id “el” is available in the DOM when this script runs.
+        */
+        document.getElementById("el").style.color = "red";
+    </script>
+</body>
+
+</html>
