@@ -1,0 +1,1 @@
+let arr: (number | boolean[] | (string | (string | number)[])[])[] = [3,[true,false],["eeee",["ffff",44]]];
